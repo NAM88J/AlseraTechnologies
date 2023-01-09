@@ -9,15 +9,14 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
-    $(document).on('click', '.mob_button', function(e){
+    $(document).on('click', '.mobile_button, .close_menu, .mobail_menu.active a', function(e){
         e.preventDefault();
-        $(this).toggleClass('active');
-        $('.mainmenu').toggleClass('active');
+        $('.mobail_menu, .mobile_button').toggleClass('active');
     });
 	$(document).on('click', '.menu a', function (e) {
 		e.preventDefault();
 		let id  = $(this).attr('href'),
 			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 800);
+		$('body,html').animate({scrollTop: top}, 1200);
 	});
 });
