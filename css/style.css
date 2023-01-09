@@ -693,6 +693,7 @@ footer .logo {
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-end;
         padding: 95px 15px 45px;
         transform: translateX(-100%);
         transition: transform 0.4s;
@@ -713,7 +714,7 @@ footer .logo {
     .menu ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: right;
     }
     .phone_area-link a {
         font-size: 19px;
