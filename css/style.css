@@ -576,22 +576,27 @@ footer .logo {
         width: 255px;
         margin: 0 15px 0 0;
     }
+    .services_item:last-child {
+        margin: 0;
+    }
     .services_area {
         display: flex;
         width: max-content;
         justify-content: center;
         flex-wrap: nowrap;
         margin: 0;
+        margin-left: calc(50% - 384px );
     }
     .services_item-title {
         font-size: 20px;
     }
-    .services_scrol {
+    .services_scrol.container {
         overflow-x: scroll;
         position: relative;
         z-index: 1;
         margin-top: -100px;
-        margin-right: calc(-50vw + 384px );
+        width: 100%;
+        
     }
     .services_scrol::-webkit-scrollbar-track {
         background-color: #fff;
@@ -687,8 +692,8 @@ footer .logo {
         background: linear-gradient(90deg, #6654D3 0%, #A265D5 67.45%);
         width: 100%;
         flex-direction: column;
-        justify-content: justify-content;
-        align-items: flex-end;
+        justify-content: space-between;
+        justify-content: center;
         padding: 95px 15px 45px;
         transform: translateX(-100%);
         transition: transform 0.4s;
@@ -709,7 +714,7 @@ footer .logo {
     .menu ul {
         display: flex;
         flex-direction: column;
-        text-align: right;
+        text-align: center;
     }
     .phone_area-link a {
         font-size: 19px;
@@ -744,7 +749,7 @@ footer .logo {
     }
     .main_men {
         width: 210px;
-        right: calc(50% - 150px);
+        right: calc(50% - 97px);
     }
     .main_link a {
         width: 100%;
@@ -794,9 +799,11 @@ footer .logo {
         height: 86px;
         margin-top: 15px;
     }
-    .services_scrol {
+    .services_scrol.container {
         margin-top: -71px;
-        margin-right: calc(-50vw + 150px );
+    }
+    .services_area {
+        margin-left: calc(50% - 150px);
     }
     .solve {
         position: relative;
