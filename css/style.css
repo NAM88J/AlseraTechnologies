@@ -693,7 +693,6 @@ footer .logo {
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
-        justify-content: center;
         padding: 95px 15px 45px;
         transform: translateX(-100%);
         transition: transform 0.4s;
