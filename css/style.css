@@ -329,7 +329,7 @@ header .flex {
     object-fit: cover;
 }
 .services_item-title {
-    padding: 20px 10px 6px;
+    padding: 10px;
     font-size: 22px;
     line-height: 1.32;
     background: linear-gradient(90deg, #6654D3 0%, #A265D5 67.45%);
@@ -446,11 +446,16 @@ header .flex {
 .contact_text:last-child {
     margin-bottom: 0;
 }
-.contact_text span {
+.contact_text span,
+.contact_text a {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.57;
     display: block;
+    color: #fff;
+}
+.contact_text a:hover {
+    color: #fff;
 }
 .contact .subtitle {
     color: rgba(255, 255, 255, 0.43);
@@ -628,7 +633,8 @@ footer .logo {
     .contact_text {
         font-size: 20px;
     }
-    .contact_text span {
+    .contact_text span,
+    .contact_text a {
         font-size: 16px;
     }
     .contact_content {
@@ -796,11 +802,11 @@ footer .logo {
         text-align: center;
     }
     .services_line {
-        height: 86px;
+        height: 140px;
         margin-top: 15px;
     }
     .services_scrol.container {
-        margin-top: -71px;
+        margin-top: -110px;
     }
     .services_area {
         margin-left: calc(50% - 150px);
@@ -835,13 +841,10 @@ footer .logo {
         max-width: 300px;
     }
     .contact {
-        padding: 50px 0 200px;
+        padding: 50px 0;
     }
     .contact_women {
-        width: 346px;
-        right: calc(50% - 235px);
-        bottom: -48px;
-        z-index: 2;
+        display: none;
     }
     footer {
         padding: 35px 0;
